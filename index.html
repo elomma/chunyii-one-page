@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>群益证券测试用</title>
+    <link rel="styles.css">
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14"></script>
+
+</head>
+<body>
+    <div id="app" class="outer-wrap">
+        <div @click="backHome" class="title-wrap">
+            <img class="img-1" src="./title-1.jpg" alt="">
+        </div>
+        <!--  -->
+        <div class="title-wrap">
+            <img class="img-2" src="./title-2.png" alt="">
+            <img @click="redirectService" class='reg-btn' src="./regist-btn.png" alt="" class="btn">
+        </div>
+        <div class="title-wrap">
+            <img class="img-2" src="./title-3.png" alt="">
+            <img @click="redirectService" class='reg-btn' src="./regist-btn.png" alt="" class="btn">
+        </div>
+        <div class="title-wrap">
+            <img class="img-2" src="./title-4.png" alt="">
+            <img @click="redirectService" class='reg-btn' src="./regist-btn.png" alt="" class="btn">
+        </div>
+        <div class="title-wrap">
+            <img class="img-2" src="./title-5.png" alt="">
+            <img @click="redirectService" class='reg-btn' src="./regist-btn.png" alt="" class="btn">
+        </div>
+        <!--  -->
+        <div class="footer">
+            <img class="footer-img-1" src="./footer-1.png" alt="">
+            <img class="footer-img-2" src="./footer-2.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+var vm = new Vue({
+    el: '#app',
+    methods:{
+        backHome: function(){
+            window.open('https://edisonwazzup.github.io/ffansProject')
+        },
+        redirectService: function(){
+            window.open('https://line.me/R/ti/p/@jh-gold')
+        }
+    },
+
+    created(){
+
+        console.log('asd')
+    },
+  // options
+})
+</script>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+}
+
+
+.outer-wrap{
+    width: 100vw;
+}
+
+.title-wrap{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.reg-btn{
+    position: absolute;
+    width: 15%;
+    left: 10%;
+    top: 55%;
+    cursor: pointer;
+}
+
+.footer{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-1{
+    width: 100%;
+}
+
+.img-2{
+    width: 75%;
+}
+
+.footer-img-1{
+    width: 35%;
+}
+.footer-img-2{
+    width: 50%;
+}
+
+</style>
